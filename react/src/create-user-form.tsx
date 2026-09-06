@@ -49,7 +49,7 @@ function CreateUserForm({ setUserWasCreated }: CreateUserFormProps) {
   const failedRules = PASSWORD_RULES.filter((rule) => !rule.test(password));
   const isPasswordValid = failedRules.length === 0;
   const canSubmit = username.trim().length > 0 && isPasswordValid;
-
+//async function for handling the form submission, including API call and error handling
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setApiError(null);
