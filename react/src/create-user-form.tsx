@@ -7,7 +7,7 @@ interface CreateUserFormProps {
 
 const API_URL =
   'https://api.challenge.hennge.com/password-validation-challenge-api/001/challenge-signup';
-
+//just the description of the rules, not the implementation.
 const PASSWORD_RULES: { message: string; test: (value: string) => boolean }[] = [
   {
     message: 'Password must be at least 10 characters long',
